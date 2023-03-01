@@ -4,28 +4,23 @@ body {
 }
 
 header .banniere {
-padding-top: 44px;
+margin-top: 44px;
 margin-left: 55 px;
 padding-left: 55px;
 padding-right: 77px;
 
 }
-
 header .logo {
     display: flex;
     justify-items: center;
     height: 19px;
     width: 61.09px;
 }
-
 header .haut:hover {
     /* text-decoration-color: blue; */
     color: #0065FC;
 
 }
-
-
-
 header .balise
 {
     display: flex;
@@ -33,4 +28,107 @@ header .balise
 }
 .haut { 
     margin-left: 67px;  
+}
+
+
+main .barre{
+    display: flex;
+    justify-content: left;
+    margin-left: 55px;
+    width: 322px;
+    height: 49px;
+}
+main .pin {
+    
+    background-color:#F2F2F2 ;
+    border: 15px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    
+   
+}
+main .recherche
+{
+    
+    display: flex;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;;
+    align-items: center;
+    
+    
+    font-size: 18px;
+    
+    
+}
+
+main .bouton {
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: white; 
+    background: #0065FC;
+    border: 10px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    text-justify: center;
+    padding: 15px, 16px, 15px, 16px;
+    align-items: center;
+    
+}
+input {
+    height: 18px;
+    Border:none;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    
+    text-justify: center;
+    
+}
+
+.bulle{
+
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+
+
+    
+}
+
+div .bulle:hover{
+    background-color:#DEEBFF;
+
+
+}
+main .filtres{
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    width: 914px;
+    height: 50px;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin-left: 62px;
+    margin-top: 32px;
+    align-items: center;
+    
+    
+    
+
+}
+
+main .slogan{
+    margin-left: 55px;
 }
