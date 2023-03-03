@@ -82,7 +82,6 @@ input {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    
     text-justify: center;
     
 }
@@ -131,4 +130,37 @@ main .filtres{
 
 main .slogan{
     margin-left: 55px;
+}
+
+main .lei{
+
+    color:#0065FC;
+    margin-left: 59px;
+}
+
+main .logements{
+
+    display: flex;
+    align-items: left;
+   
+    
+}
+
+.zotel{
+    
+    display: grid;
+    grid-template-columns: 246px 246px 246px;
+    gap: 31px;
+
+}
+
+main img{
+
+    height: 124px;
+    width: 246px;
+}
+main .centaur {
+
+    margin-left: 90px;
+    
 }
