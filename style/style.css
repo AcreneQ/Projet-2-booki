@@ -5,8 +5,7 @@ body {
 
 header .banniere {
 margin-top: 44px;
-margin-left: 55 px;
-padding-left: 55px;
+margin-left: 55px;
 padding-right: 77px;
 
 }
@@ -48,17 +47,16 @@ main .pin {
 }
 
 main .recherche
-{
-    
+{   
     display: flex;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;;
     align-items: center;
-    justify-items: auto;
-    
+    justify-items: center;   
     font-size: 18px;
-    
-    
+}
+a:link { 
+    text-decoration: none;   
 }
 
 main .bouton {
@@ -71,12 +69,8 @@ main .bouton {
     background: #0065FC;
     border: 10px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    text-justify: center;
-    padding: 15px, 16px, 15px, 16px;
-    align-items: center;
-    
-    
-    
+    padding: 15px 16px 15px 16px;
+    align-items: center;   
 }
 input {
     height: 41px;
@@ -85,7 +79,6 @@ input {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    text-justify: center;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;;
     width: 236px;
@@ -138,27 +131,26 @@ main .slogan{
 }
 
 main .lei{
-    height: 24px;
-    width: 24px;
+    
     color:#0065FC;
     margin-left: 59px;
     border: 1px solid #D9D9D9;
     border-radius: 20px;
-
-
-}
-
-main .logements{
-
-    display: flex;
-    align-items: left;
-   
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 5px;
+    
+    
+    
     
 }
-
-
-
-
+main .logements{
+    display: flex;
+    margin-top: 54px;
+    
+}
 
 main img{
 
@@ -166,22 +158,16 @@ main img{
     width: 246px;
 }
 main .centaur {
-    
-    
+        
     margin-left: 50px;
     margin-top: 39px;
     padding-left: 40px;
-    padding-top: 42px;
-    padding-right: 40;
+    padding-top: 42px; 
     padding-bottom: 46px;
     background: #F2F2F2;
     border-radius: 20px;
     width: 880px;
     height: 626px;
-    
-    
-
-
 }
 
 .btn2 {
@@ -190,6 +176,8 @@ main .centaur {
     background-color: transparent;
     font-size: 17px;
     font-weight: 700;
+    cursor: pointer;
+
 }
 
 .btn1 {
@@ -198,6 +186,7 @@ main .centaur {
     border: 15px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     width: 50px;
+    cursor: pointer;
 
     
 }
@@ -212,10 +201,10 @@ main .centaur {
     background: #0065FC;
     border: 10px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    text-justify: center;
-    padding: 15px, 16px, 15px, 16px;
+    
+    
     align-items: center;
-
+    cursor: pointer;
 
 }
 
@@ -225,11 +214,6 @@ main .centaur {
     grid-template-columns: 246px 246px 246px;
     gap: 31px;
     
-
-
-    
-    
-
 
 }
 
@@ -244,7 +228,7 @@ main .centaur {
 }
 
 
-main a {
+main article {
 
     background-color: white;
     border-radius: 20px;
@@ -252,60 +236,25 @@ main a {
     text-decoration: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    
+
     
     
 }
 
-main a:hover{
+main article:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 
-.port {
+.card {
 
     border-radius: 20px 20px 0px 0px;
     width: 238px;
     padding: 4px;
     object-fit: cover;
-
-}
-.canebiere {
-
-    border-radius: 20px 20px 0px 0px;
-    width: 238px;
-    padding: 4px;
-    object-fit: cover;
-}
-.mouettes {
-
-    border-radius: 20px 20px 0px 0px;
-    width: 238px;
-    padding: 4px;
-    object-fit: cover;
-}
-.mer{
-
-    border-radius: 20px 20px 0px 0px;
-    width: 238px;
-    padding: 4px;
-    object-fit: cover;
-}
-.panier{
-
-    border-radius: 20px 20px 0px 0px;
-    width: 238px;
-    padding: 4px;
-    object-fit: cover;
+    
 }
 
-.amina{
-
-    border-radius: 20px 20px 0px 0px;
-    width: 238px;
-    padding: 4px;
-    object-fit: cover;
-}
 .prix {
     margin-left: 16px;
     
@@ -314,7 +263,8 @@ main a:hover{
     
     line-height: 0px;
     padding-bottom: 11px;
-
+    color: black;
+    text-decoration: none;
 }
 
 main .oui{
@@ -323,7 +273,6 @@ main .oui{
 }
 
 aside{
-
     height: 625px;
     width: 420px;
     margin-left: 40px;
@@ -333,8 +282,11 @@ aside{
     padding-left: 37px;
     padding-top: 41px;
     padding-bottom: 46px;
-    
+    padding-right: 40px;
+    margin-right: 90px; 
 }
+
+
 
 .pop{
     display: flex;
@@ -343,6 +295,9 @@ aside{
     border-radius: 20px;
     gap: 33px;
     height: 144px;
+}
+.poprix {
+    color:black;
     
 }
 
@@ -365,12 +320,10 @@ aside a{
 }
 
 .afficher{
-
     border: none;
     background-color: #F2F2F2;
-    box-shadow: none;
-    border-radius: none;
-    
+    color: black;
+    text-align: left;  
 }
 .afficher:hover {
 
@@ -379,13 +332,147 @@ aside a{
 
 
 aside h2 i {
-    margin-left: 90px;
+    margin-left: 170px;
     color: #0065FC;
+}
+
+
+.activite 
+{
+display: grid;
+grid-template-columns: 302px 302px 302px 302px;
+height: 444.51px;
+gap:43px;
+
+}
+
+.activite img{
+
+height: 388.51px;
+width: 302px;
+object-fit: cover;
+
+border-radius: 20px 20px 0px 0px;
+}
+.activite h3{
+padding-left: 19px;
+color:black;
+
+}
+.activites{
+
+    padding-left: 50px;
+}
+
+footer nav{
+
+    display: flex;
+    gap:347px;
+    padding-left:  70px;
+    background-color: #F2F2F2;
+    margin-left: 48px;
+    margin-top: 61px;
+    margin-right: 53px;
     
 }
 
-.activite a{
 
 
-    grid-template-columns: 302px
+
+
+@media screen and (max-width: 992px) {
+
+    body {
+        background-color: red;
+    }
+    .oui {
+        display: flex;
+        flex-direction: column;
+    }
+    .pop{
+        display: flex;
+        flex-direction: row;
+
+    }
+    aside{
+
+        width: 883px;
+        height: 278px;
+        margin-left: 70px;
+        margin-right: 71px;
+        padding-right: 0px;
+    }
+    aside img{
+
+        width: 96px;
+        height: 134px;
+    }
+
+    aside a{
+
+        width: 252px;
+        height: 144px;
+    }
+    
+    aside h3{
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.44px;
+    }
+
+    .activite img{
+
+        width: 182px;
+        height: 211px;
+    }
+    .activite{
+
+        grid-template-columns: 182px 182px 182px 182px;
+        height: 267px;
+        gap: 50px;
+        margin-left: 23px;
+    }
+    .activites h2{
+
+        margin-left: 30px;
+    }
+    footer nav{
+        width: 879.65px;
+        height: 225px;
+        margin-left: 73.53px;
+        margin-right: 70.82px;
+        gap: 82px;
+    }
+    
+    aside h2 i{margin-left: 575px;}
+    main .centaur{margin-left: 72px;}
+    main .logements{margin-left: 72px; padding-left: 0px;}
+    main .lei{margin-left: 0px;}
+    main .filtres{margin-left: 72px;}
+    main .barre{margin-left: 0px;}
+    main .slogan{margin-left: 0px;}
+    main .hebergements{margin-left: 72px;}
+    header .banniere{margin-left: 72px;}
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: transparent;
+    }
+
+    .oui {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 580px;
+    }
+    .pop {flex-direction: column; width: 334px; height: 144px;}
+    aside img{width: 137px; height: 134px;}
 }
