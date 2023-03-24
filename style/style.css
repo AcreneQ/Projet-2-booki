@@ -4,8 +4,9 @@ body {
 }
 
 header .banniere {
-margin-top: 44px;
-margin-left: 55px;
+
+margin-top: 3%;
+
 padding-right: 77px;
 
 }
@@ -16,26 +17,25 @@ header .logo {
     width: 61.09px;
 }
 header .haut:hover {
-    /* text-decoration-color: blue; */
+    
     color: #0065FC;
+
 
 }
 header .balise
 {
     display: flex;
     justify-content: flex-end;
+    gap: 3%;
 }
-.haut { 
-    margin-left: 67px;  
-}
+
 
 
 main .barre{
     display: flex;
     justify-content: left;
-    margin-left: 55px;
-    width: 322px;
-    height: 49px;
+    width: 22%;
+    height: 3%;
     align-items: center;
     
 }
@@ -95,6 +95,7 @@ input {
     padding-left: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
+    
 }
 
 .icone {
@@ -107,48 +108,43 @@ div .bulle:hover{
 
 }
 main .filtres{
-    
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
     display: flex;
-    width: 914px;
+    font-style: normal;
+    font-weight: auto;
+    font-size: 16px;
+    line-height: 20px;
+    
+    max-width: 914px;
     height: 50px;
     justify-content: flex-start;
     justify-content: space-between;
-    margin-left: 62px;
     margin-top: 32px;
     align-items: center;
-    
-    
-    
-
 }
 
-main .slogan{
-    margin-left: 55px;
-}
+.filters {display: flex;width: auto;gap: 5%;}
 
 main .lei{
-    
-    color:#0065FC;
-    margin-left: 59px;
+    display:flex;
+
+    color: #0065FC; 
     border: 1px solid #D9D9D9;
-    border-radius: 20px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-top: 5px;
+    border-radius:50%;
     
+    height: 5px;
+    width: 5px;
     
-    
-    
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+
 }
 main .logements{
     display: flex;
-    margin-top: 54px;
+    margin-top: 3%;
+    
+    
     
 }
 
@@ -158,16 +154,18 @@ main img{
     width: 246px;
 }
 main .centaur {
-        
-    margin-left: 50px;
+    
+    
     margin-top: 39px;
-    padding-left: 40px;
-    padding-top: 42px; 
+    padding-left: 3%;
+    padding-top: 3%; 
     padding-bottom: 46px;
     background: #F2F2F2;
     border-radius: 20px;
-    width: 880px;
-    height: 626px;
+    width: 113%;
+    height: auto;
+    
+    
 }
 
 .btn2 {
@@ -212,7 +210,7 @@ main .centaur {
 
     display: grid;
     grid-template-columns: 246px 246px 246px;
-    gap: 31px;
+    gap: 4%;
     
 
 }
@@ -249,7 +247,7 @@ main article:hover{
 .card {
 
     border-radius: 20px 20px 0px 0px;
-    width: 238px;
+    width: 96.5%;
     padding: 4px;
     object-fit: cover;
     
@@ -257,10 +255,8 @@ main article:hover{
 
 .prix {
     margin-left: 16px;
-    
     display: flex;
     flex-direction: column;
-    
     line-height: 0px;
     padding-bottom: 11px;
     color: black;
@@ -270,20 +266,21 @@ main article:hover{
 main .oui{
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 aside{
-    height: 625px;
-    width: 420px;
-    margin-left: 40px;
+    height: auto;
+    width: auto;
+    margin-left: 4%;
     margin-top: 39px;
     background: #F2F2F2;
     border-radius: 20px;
-    padding-left: 37px;
+    padding-left: 3%;
     padding-top: 41px;
     padding-bottom: 46px;
-    padding-right: 40px;
-    margin-right: 90px; 
+    padding-right: 2%;
+    margin-left: 10%;
 }
 
 
@@ -294,7 +291,7 @@ aside{
     align-content: space-around;
     border-radius: 20px;
     gap: 33px;
-    height: 144px;
+    height: auto;
 }
 .poprix {
     color:black;
@@ -307,7 +304,7 @@ aside img{
    width: 137px;
    height: 134px;
    border: 5px solid #FFFFFF;
-    border-radius: 20px 0px 0px 20px;
+   border-radius: 20px 0px 0px 20px;
 }
 
 aside a{
@@ -323,7 +320,8 @@ aside a{
     border: none;
     background-color: #F2F2F2;
     color: black;
-    text-align: left;  
+    text-align: left; 
+    
 }
 .afficher:hover {
 
@@ -340,37 +338,32 @@ aside h2 i {
 .activite 
 {
 display: grid;
-grid-template-columns: 302px 302px 302px 302px;
-height: 444.51px;
-gap:43px;
+grid-template-columns: 21% 21% 21% 21%;
+
+gap:3%;
 
 }
 
 .activite img{
 
-height: 388.51px;
-width: 302px;
-object-fit: cover;
+height: 80%;
 
+width: 100%;
+object-fit: cover;
 border-radius: 20px 20px 0px 0px;
 }
 .activite h3{
 padding-left: 19px;
 color:black;
-
-}
-.activites{
-
-    padding-left: 50px;
 }
 
 footer nav{
 
     display: flex;
-    gap:347px;
+    gap: 25%;
     padding-left:  70px;
     background-color: #F2F2F2;
-    margin-left: 48px;
+    
     margin-top: 61px;
     margin-right: 53px;
     
@@ -387,7 +380,14 @@ footer nav{
     }
     .oui {
         display: flex;
-        flex-direction: column;
+        
+       
+    }
+    .centaur{
+
+        padding-right: 0%;
+        margin-right: 0%;
+        width: auto;
     }
     .pop{
         display: flex;
@@ -396,11 +396,11 @@ footer nav{
     }
     aside{
 
-        width: 883px;
-        height: 278px;
-        margin-left: 70px;
-        margin-right: 71px;
-        padding-right: 0px;
+        
+        margin-left: 0%;
+        margin-right: 40%;
+        
+    
     }
     aside img{
 
@@ -412,6 +412,8 @@ footer nav{
 
         width: 252px;
         height: 144px;
+        min-width: none;
+        min-height: none;
     }
     
     aside h3{
@@ -430,30 +432,19 @@ footer nav{
 
         grid-template-columns: 182px 182px 182px 182px;
         height: 267px;
-        gap: 50px;
-        margin-left: 23px;
+        
+   
     }
-    .activites h2{
-
-        margin-left: 30px;
-    }
+ 
     footer nav{
-        width: 879.65px;
+        
         height: 225px;
-        margin-left: 73.53px;
         margin-right: 70.82px;
         gap: 82px;
     }
     
-    aside h2 i{margin-left: 575px;}
-    main .centaur{margin-left: 72px;}
-    main .logements{margin-left: 72px; padding-left: 0px;}
-    main .lei{margin-left: 0px;}
-    main .filtres{margin-left: 72px;}
-    main .barre{margin-left: 0px;}
-    main .slogan{margin-left: 0px;}
-    main .hebergements{margin-left: 72px;}
-    header .banniere{margin-left: 72px;}
+
+
 
 }
 
@@ -465,6 +456,7 @@ footer nav{
     .oui {
         display: flex;
         flex-direction: column-reverse;
+        border: none;
     }
    
     aside {
@@ -472,7 +464,27 @@ footer nav{
         flex-direction: column;
         width: 375px;
         height: 580px;
+        margin-left: 0%;
+        border-radius: 0%;
     }
     .pop {flex-direction: column; width: 334px; height: 144px;}
     aside img{width: 137px; height: 134px;}
+    
+    .card{width: 334px;}
+
+    .zotel{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    .centaur{max-width: 40%;}
+    main .centaur{background: none;}
+
+    .activite{display: flex; flex-direction: column; width: fit-content; height: fit-content;}
+    .activite img{width: 334px;}
+    
+
+  
+
 }
