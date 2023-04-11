@@ -1,132 +1,172 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    max-width: 1440px;
+    max-width: 1400px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+h2{
+    text-decoration: none;
+}
+h3{
+    text-decoration: none;
+}
+h4{
+    text-decoration: none;
+}
+p{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+header {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+header nav a,
+header nav div a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    flex: 0;
+}
+
+.menu {
+    flex: 1;
+    text-align: right;
     margin: auto;
 }
 
-header {
-display: flex;
-margin-bottom: 0;
-align-items: center;
-margin-top: 10px;
-}
-
-header nav
-{
-    display: flex;
-    justify-content:end;
-    gap: 10%;
-    position: absolute;
-    right: 0;
-    margin-right: 3%; 
-}
-
-header nav p:hover {
-    color: #0065FC;
-    border-top: 5px solid #0065FC;
-}
-
-header nav p{
-    padding-top: 20px;
-}
-
-main .barre{
-    display: flex;
-    justify-content: left;
-    width: 22%;
-    height: 3%;
-    align-items: center;   
-}
-
-main .pin { 
-    background-color:#F2F2F2 ;
-    border: 15px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-}
-
-main .recherche
-{   
-    display: flex;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;;
-    align-items: center;
-    justify-items: center;   
-    font-size: 18px;
-}
-
-a:link { 
-    text-decoration: none;   
-}
-
-main .bouton {
-    display: flex;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: white; 
-    background: #0065FC;
-    border: 10px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    padding: 15px 16px 15px 16px;
-    align-items: center;   
-}
-input {
-    height: 41px;
-    Border:none;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 21px;
-    text-align: center;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;;
-    width: 236px;
-}
-.btn3 i {
-    visibility: hidden;
-}
-.filters {
-    display: flex;
-    align-items: center;
-    gap:5%;
-}
-main .filtres {
-    display: flex;
-    font-style: normal;
+.menu a {
+    padding: 30px;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
-    width: 70%;
-    height: 50px;
-    justify-content: flex-start;
-    justify-content: space-between;
-    align-items: center;
-    
-    
+    line-height: 19px;
 }
 
-.bulle {
-    border: 2px solid #D9D9D9;
-    border-radius: 25px;
-    height: 20px;
+.menu a.active,
+.menu a:hover {
+    border-top: solid 2px #0065FC;
+    color: #0065FC;
+}
+
+header nav a img {
+    width: 61.09px;
+    height: 19px;
+}
+.search-row {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.btn {
+    border: 0;
+}
+
+.btn-location {
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    width: 49px;
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    justify-content: center;
+}
+
+.btn-location i {
+    width: 14px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    border: solid 1px #F2F2F2;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
     padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    
 }
 
-.icone {
-        color: #0065FC;
+.btn-search-common {
+    background-color: rgba(0, 101, 252, 1);
+    color: white;
+    cursor: pointer;
 }
 
-div .bulle:hover {
-    background-color:#DEEBFF;
+.btn-search {
+    width: 132px;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 
+.btn-search-glass {
+    display: none;
+}
 
+.btn-search-glass i {
+    width: 17px;
+    height: 17px;
+}
+
+.filters {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filters h2 {
+    padding: 10px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding: 10px;
+}
+
+.btn-filter {
+    border-radius: 25px;
+    border: solid 2px #D9D9D9;
+    background-color: transparent;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 19.96px;
+    font-weight: 700;
+}
+
+.btn-filter i {
+    color: #0065FC;
+    padding-right: 5px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-filter:hover {
+    background: #DEEBFF;
+}
 
 .info {
     display: flex;
@@ -157,15 +197,6 @@ div .bulle:hover {
     font-weight: 400;
     line-height: 19px;
 }
-
-.btn2 {
-    border: none;
-    background-color: transparent;
-    font-size: 17px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
 .btn1 {
     background-color:#F2F2F2 ;
     border: 15px solid #F2F2F2;
@@ -259,6 +290,7 @@ aside{
     background: #F2F2F2;
     border-radius: 20px;
     padding-left: 3%; 
+    padding-right: 3%;
 }
 
 .pop {
@@ -267,16 +299,20 @@ aside{
     align-content: space-around;
     border-radius: 20px;
     gap: 33px;
-    height: auto;
+    
 }
 
 .poprix {
 
-    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color:black;
     background: white;
-    padding-left: 3%;
     border-radius: 0px 20px 20px 0px;
+    line-height: 0.9;
+    height: 100%;
     
     
 }
@@ -291,14 +327,13 @@ aside img {
 
 aside a {  
     display: flex;
-    height: 50%;
-    width: 90%;
-    align-content: space-around;
+    height: 100%;
+    width: 100%;
+    
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: #FFFFFF;
-    font-size: 13px;
     
 }
 
@@ -350,29 +385,45 @@ object-fit: cover;
 border-radius: 20px 20px 0px 0px;
 }
 
-.activite h3 {
+.activite h4 {
 color:black;
-padding-left: 8%;
-margin-bottom: 5%;
+
+
+
+text-align: center;
 }
 
-footer nav {
-    margin-top: 3%;
+footer {
+    width: 96%;
+    margin: 2% 2% 0 2%;
     display: flex;
-    gap: 25%;
-    padding-left:  3%;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #F2F2F2;
-    width: auto; 
 }
-li{
-    list-style-type: none;
+
+footer div {
+    width: 33%;
+    margin: 2% 4% 2% 4%;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer ul {
+    margin-top: 20px;
+}
+
+footer li {
+    list-style: none;
+    margin: 10px 0px 0px -40px;
 }
 
 @media screen and (max-width: 992px) {
 
     body {
-        margin-left: 1%;
-        margin-right: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     .popularlodgings {
@@ -401,7 +452,15 @@ li{
     padding-bottom: 3%;
     padding-right: 2%;
    }
-
+   aside article{
+    width: 33%;
+   }
+   aside h4{
+    font-size: 14px;
+   }
+   aside p{
+    font-size: 13px;
+   }
     aside img { 
         width: 96px;
         height: 134px;
@@ -409,15 +468,10 @@ li{
 
     aside a {
         width:100%;
-        height: 144px;
-        font-size: 12px;
+        height: 144px;  
     }
-    
-    aside h3 {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16.44px;
-    }
+ 
+
     aside h2 i { 
         margin-left: 60%;
     }
@@ -425,84 +479,83 @@ li{
         font-size: 13px;
 
     }
-    footer nav {
-        height: 225px;
-        gap: 10%;
-        width: auto;
-        padding-left: 6%;
-    }
+
 }
 
 @media screen and (max-width: 768px) {
     body {
         background-color: transparent;
         margin: 0;
+        overflow-x: hidden;
+        max-width: 100%;
     }
-    header {
-        display: flex;
+    header nav {
         flex-direction: column;
-        margin-top: 3%;     
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
-    header nav p:hover {
-        color: #0065FC;
-        border-bottom: 3px solid #0065FC;
-        border-top: none;    
+    .logo {
+        text-align: center;
     }
 
-    header nav{
-        width: 100%;
-        position: unset;
-        justify-content: center;
-        gap: 0%;
-        margin-left: 3%;
+    .menu {
+        display: flex;
+        margin: unset;
+        text-align: center;
     }
 
-    header nav p{
-        width: 100%;
-        padding-left: 15%; 
-        padding-bottom: 5%;
-        border-bottom: 3px solid #F2F2F2;   
+    .menu a {
+        flex: 1;
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    .menu a.active,
+    .menu a:hover {
+        border-top: unset;
+        border-bottom: solid 2px #0065FC;
     }
 
     main .slogan {
         margin-left: 3%;
     }
 
-    input { 
-        width:280px;
+    .search-input {
+        flex: 1;
     }
 
-    .btn3 p {
-        visibility: hidden;
+    .btn-search {
+        display: none;
     }
 
-    .btn3 i {
-        visibility: visible;
-        justify-items: center;
+    .btn-search-glass {
+        border-radius: 10px;
+        display: block;
+        margin-left: -5px;
+        width: 49px;
+    }
+    .filters h2 {
+        flex: 100%;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
-    .btn3 {
-        width:40px
-    }
-    .barre {
-        margin-left: 3%;
-        
-    }
-    main .filtres {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-content: unset;
-        gap: 7%;
-        font-size: small;
-        margin-left: 10%;
-        
+    .filter {
+        flex: 45%
     }
 
-    main .filters {
-        
-        display: unset;
-        margin-left: 3%;
+    .btn-filter {
+        width: 100%;
+        text-align: left;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .btn-filter i {
+        width: 21px;
+        height: 20px;
+        font-size: 16px;
     }
 
     .info {
@@ -518,7 +571,7 @@ li{
     aside {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 150%;
         margin-left: 0%;
         border-radius: 0%;
@@ -556,7 +609,7 @@ li{
         flex-direction: column;
         justify-content: unset;
         align-items: unset;
-        width: 100%;
+        width: 90%;
         margin-left: 10%;
     }
     
@@ -602,11 +655,17 @@ li{
         height: 240px;
     }
     
-    footer nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto; 
-  }
+    footer {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    footer h2, footer li, footer ul{
+        max-width: 80%;
+    }
+    footer div {
+        width: 80%;
+        margin: 4% 8% 4% 8%;
+    }
 
 }
