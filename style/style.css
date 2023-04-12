@@ -6,18 +6,7 @@ body {
     overflow-x: hidden;
 }
 
-h2{
-    text-decoration: none;
-}
-h3{
-    text-decoration: none;
-}
-h4{
-    text-decoration: none;
-}
-p{
-    text-decoration: none;
-}
+
 a{
     text-decoration: none;
 }
@@ -240,7 +229,10 @@ main .lodgings {
     justify-content: space-around;
     align-content: space-between;   
 }
-
+.hotels article{
+    margin-left: 1%;
+    margin-right: 1%;
+}
 .card {
     display: flex;
     flex-direction: row;
@@ -308,18 +300,24 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: justify;
     color:black;
     background: white;
     border-radius: 0px 20px 20px 0px;
     line-height: 0.9;
     height: 100%;
-    
-    
+    padding-right: 5%;   
+    padding: auto;
 }
-
+aside h4{
+    max-height: 20px;
+}
+aside .stars{
+    padding-top: 0.7em;
+}
 aside img {
    object-fit: cover;
-   width: 137px;
+   width: 125px;
    height: 134px;
    border: 5px solid #FFFFFF;
    border-radius: 20px 0px 0px 20px;
@@ -329,18 +327,15 @@ aside a {
     display: flex;
     height: 100%;
     width: 100%;
-    
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    background: #FFFFFF;
-    
+    background: #FFFFFF; 
 }
 
 aside a:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 
 .afficher {
     border: none;
@@ -366,9 +361,9 @@ aside h2 i {
 }
 
 .activite {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .activite article {    
@@ -379,18 +374,16 @@ justify-content: space-between;
 }
 
 .activite img {
-height: 80%;
-width: 100%;
-object-fit: cover;
-border-radius: 20px 20px 0px 0px;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .activite h4 {
-color:black;
-
-
-
-text-align: center;
+    color:black;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 footer {
@@ -444,22 +437,24 @@ footer li {
         display: flex;
         flex-direction: row;
     }
-
-   aside {
-    width: 95%;
-    padding-left: 3%;
-    margin-top: 3%;
-    padding-bottom: 3%;
-    padding-right: 2%;
-   }
+    .poprix{ 
+        padding-right: 0%;
+    }
+    aside {
+        width: 95%;
+        padding-left: 3%;
+        margin-top: 3%;
+        padding-bottom: 3%;
+        padding-right: 2%;
+    }
    aside article{
-    width: 33%;
+        width: 33%;
    }
    aside h4{
-    font-size: 14px;
+        font-size: 14px;
    }
    aside p{
-    font-size: 13px;
+        font-size: 13px;
    }
     aside img { 
         width: 96px;
@@ -520,7 +515,10 @@ footer li {
     main .slogan {
         margin-left: 3%;
     }
-
+    .search-row {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     .search-input {
         flex: 1;
     }
@@ -559,7 +557,7 @@ footer li {
     }
 
     .info {
-        margin-top: 20%;
+        margin-top: 5%;
     }
 
     .popularlodgings {
@@ -599,9 +597,9 @@ footer li {
     }
     
     main .lodgings {
-    background: none;
-    justify-content: center;
-    width: 100%;
+        background: none;
+        justify-content: center;
+        width: 100%;
     }
 
     .hotels {
@@ -614,23 +612,23 @@ footer li {
     }
     
     .card {
-    width: 100%;
+        width: 100%;
     }
 
     main article {
-    width: 80%;
+        width: 80%;
     }
 
     .card a {
-    width:100%;
+        width:100%;
     }
 
     .hotels img {
-    width: 100%; 
+        width: 100%; 
     }
 
     .afficher {
-    visibility: hidden;
+        visibility: hidden;
     }
 
     .activites {
@@ -645,14 +643,14 @@ footer li {
     }
 
     .activite article {
-        width: 90%;
-        height: 80%;
+        width: 80%;
+        height: 70%;
         margin-bottom: 6%;
-        margin-left: 2%;
+        margin-left: 5%;
     }
 
     .activite img {
-        height: 240px;
+        height: 130px;
     }
     
     footer {
