@@ -6,10 +6,10 @@ body {
     overflow-x: hidden;
 }
 
-
-a{
+a {
     text-decoration: none;
 }
+
 header {
     width: 100%;
 }
@@ -53,6 +53,14 @@ header nav a img {
     width: 61.09px;
     height: 19px;
 }
+
+.hebergements,
+.filters,
+.info {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 .search-row {
     display: flex;
     flex-direction: row;
@@ -186,19 +194,20 @@ header nav a img {
     font-weight: 400;
     line-height: 19px;
 }
+
 .btn1 {
-    background-color:#F2F2F2 ;
+    background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     width: 50px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .btn3 {
     display: flex;
     font-weight: 700;
     text-align: center;
-    color: white; 
+    color: white;
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -206,7 +215,7 @@ header nav a img {
     cursor: pointer;
 }
 
-.popularlodgings{
+.popularlodgings {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3%;
@@ -227,12 +236,13 @@ main .lodgings {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;   
 }
-.hotels article{
+
+.hotels article {
     margin-left: 1%;
     margin-right: 1%;
 }
+
 .card {
     display: flex;
     flex-direction: row;
@@ -242,13 +252,13 @@ main .lodgings {
     border-radius: 20px;
     color: black;
     text-decoration: none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     margin-bottom: 4%;
 }
 
 main .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hotels img {
@@ -259,7 +269,7 @@ main .card:hover {
 }
 
 .étoiles {
-    color: #0065FC;  
+    color: #0065FC;
 }
 
 .étoile {
@@ -276,12 +286,12 @@ main .card:hover {
     text-decoration: none;
 }
 
-aside{
+aside {
     height: auto;
     width: 30%;
     background: #F2F2F2;
     border-radius: 20px;
-    padding-left: 3%; 
+    padding-left: 3%;
     padding-right: 3%;
 }
 
@@ -291,84 +301,96 @@ aside{
     align-content: space-around;
     border-radius: 20px;
     gap: 33px;
-    
+
 }
 
 .poprix {
-
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: justify;
-    color:black;
+    color: black;
     background: white;
     border-radius: 0px 20px 20px 0px;
     line-height: 0.9;
     height: 100%;
-    padding-right: 5%;   
-    
-}
-aside h4{
-    max-height: 20px;
-}
-aside .stars{
-    padding-top: 0.7em;
-}
-aside img {
-   object-fit: cover;
-   width: 125px;
-   height: 134px;
-   border: 5px solid #FFFFFF;
-   border-radius: 20px 0px 0px 20px;
+    padding-right: 5%;
 }
 
-aside a {  
+aside h4 {
+    max-height: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+aside p {
+    padding-left: 5px;
+}
+
+aside .stars {
+    padding-top: 0.7em;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+aside img {
+    object-fit: cover;
+    width: 125px;
+    height: 134px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+aside a {
     display: flex;
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    background: #FFFFFF; 
+    background: #FFFFFF;
 }
 
-aside a:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+aside a:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .afficher {
     border: none;
     background-color: #F2F2F2;
-    color: black; 
+    color: black;
 }
+
 .afficher:hover {
     box-shadow: none;
 }
+
 .afficher h3 {
     padding-left: 3%;
 }
 
-aside h2 i {
-    margin-left: 17%;
-    color: #0065FC;
-    width: 0;
+aside h2 {
+    display: flex;
+    justify-content: space-between;
 }
 
-.activites{
+aside h2 i {
+    color: #0065FC;
+    margin-right: 2%;
+}
+
+.activites h2 {
     margin-left: 3%;
-    margin-right: 3%;
 }
 
 .activite {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.activite article {    
+.activite article {
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 20%;
 }
@@ -381,7 +403,7 @@ aside h2 i {
 }
 
 .activite h4 {
-    color:black;
+    color: black;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -399,10 +421,12 @@ footer div {
     width: 33%;
     margin: 2% 4% 2% 4%;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: black;
 }
+
 footer ul {
     margin-top: 20px;
 }
@@ -423,6 +447,7 @@ footer li {
         display: flex;
         flex-direction: column;
     }
+
     main .lodgings {
         width: 100%;
     }
@@ -437,9 +462,11 @@ footer li {
         display: flex;
         flex-direction: row;
     }
-    .poprix{ 
+
+    .poprix {
         padding-right: 0%;
     }
+
     aside {
         width: 95%;
         padding-left: 3%;
@@ -447,30 +474,30 @@ footer li {
         padding-bottom: 3%;
         padding-right: 2%;
     }
-   aside article{
+
+    aside article {
         width: 33%;
-   }
-   aside h4{
+    }
+
+    aside h4 {
         font-size: 14px;
-   }
-   aside p{
+    }
+
+    aside p {
         font-size: 13px;
-   }
-    aside img { 
+    }
+
+    aside img {
         width: 96px;
         height: 134px;
     }
 
     aside a {
-        width:100%;
-        height: 144px;  
+        width: 100%;
+        height: 144px;
     }
- 
 
-    aside h2 i { 
-        margin-left: 60%;
-    }
-    .activite{
+    .activite {
         font-size: 13px;
 
     }
@@ -484,6 +511,7 @@ footer li {
         overflow-x: hidden;
         max-width: 100%;
     }
+
     header nav {
         flex-direction: column;
         padding-left: 0;
@@ -515,10 +543,12 @@ footer li {
     main .slogan {
         margin-left: 3%;
     }
+
     .search-row {
         margin-left: 2%;
         margin-right: 2%;
     }
+
     .search-input {
         flex: 1;
     }
@@ -533,6 +563,7 @@ footer li {
         margin-left: -5px;
         width: 49px;
     }
+
     .filters h2 {
         flex: 100%;
         margin-bottom: 0;
@@ -565,7 +596,7 @@ footer li {
         flex-direction: column-reverse;
         border: none;
     }
-   
+
     aside {
         display: flex;
         flex-direction: column;
@@ -578,24 +609,22 @@ footer li {
 
     .pop {
         flex-direction: column;
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     aside img {
-        width: 137px; 
+        width: 137px;
     }
 
-    aside article{
+    aside article {
         margin-bottom: 5%;
         justify-content: center;
-        margin-left: 6%;
     }
 
-    aside h2 i {
-        margin-left: 25%;
-    }
-    
     main .lodgings {
         background: none;
         justify-content: center;
@@ -603,14 +632,12 @@ footer li {
     }
 
     .hotels {
-        display:flex;
+        display: flex;
         flex-direction: column;
-        justify-content: unset;
-        align-items: unset;
-        width: 90%;
-        margin-left: 10%;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .card {
         width: 100%;
     }
@@ -620,11 +647,11 @@ footer li {
     }
 
     .card a {
-        width:100%;
+        width: 100%;
     }
 
     .hotels img {
-        width: 100%; 
+        width: 100%;
     }
 
     .afficher {
@@ -632,14 +659,14 @@ footer li {
     }
 
     .activites {
-        margin-left: 3%;
         margin-right: 0;
     }
 
-    .activite { 
-        display: flex; 
+    .activite {
+        display: flex;
         flex-direction: column;
-        justify-content: unset; 
+        justify-content: center;
+        align-items: center;
     }
 
     .activite article {
@@ -652,15 +679,19 @@ footer li {
     .activite img {
         height: 130px;
     }
-    
+
     footer {
         flex-direction: column;
         width: 100%;
         margin: 0;
     }
-    footer h2, footer li, footer ul{
+
+    footer h2,
+    footer li,
+    footer ul {
         max-width: 80%;
     }
+
     footer div {
         width: 80%;
         margin: 4% 8% 4% 8%;
