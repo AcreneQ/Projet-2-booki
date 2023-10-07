@@ -44,6 +44,7 @@ header nav div a {
 }
 
 .menu a.active,
+.menu a:focus,
 .menu a:hover {
     border-top: solid 2px #0065FC;
     color: #0065FC;
@@ -125,10 +126,6 @@ header nav a img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.filters h2 {
-    padding: 10px;
 }
 
 .filter {
@@ -313,7 +310,7 @@ aside {
     border-radius: 0px 20px 20px 0px;
     line-height: 0.9;
     height: 100%;
-    padding-right: 5%;
+    
 }
 
 aside h4 {
@@ -348,6 +345,7 @@ aside a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     background: #FFFFFF;
+    
 }
 
 aside a:hover {
@@ -442,7 +440,14 @@ footer li {
         margin-left: 3%;
         margin-right: 3%;
     }
-
+    .btn-filter{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .filter {
+        padding: 5px;
+        font-size: 13px;
+    }
     .popularlodgings {
         display: flex;
         flex-direction: column;
@@ -571,14 +576,17 @@ footer li {
     }
 
     .filter {
-        flex: 45%
+        flex: 45%;
+        padding: 0px;
+        margin : 5px;
     }
 
     .btn-filter {
         width: 100%;
         text-align: left;
-        font-size: 11px;
+        font-size: 12px;
         line-height: 13px;
+        font-weight: 900;
     }
 
     .btn-filter i {
@@ -673,7 +681,7 @@ footer li {
         width: 80%;
         height: 70%;
         margin-bottom: 6%;
-        margin-left: 5%;
+        
     }
 
     .activite img {
